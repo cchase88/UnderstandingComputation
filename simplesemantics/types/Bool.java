@@ -1,6 +1,6 @@
-package SimpleSemantics.Types;
+package simplesemantics.types;
 
-import SimpleSemantics.Environment;
+import simplesemantics.Environment;
 
 public class Bool extends Value<Boolean>{
 

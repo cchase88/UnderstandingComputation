@@ -1,6 +1,6 @@
-package SimpleSemantics;
+package simplesemantics;
 
-import SimpleSemantics.Types.Value;
+import simplesemantics.types.Value;
 
 public class Environment extends java.util.HashMap<String, Value<?>> {
 

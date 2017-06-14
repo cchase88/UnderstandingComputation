@@ -1,10 +1,10 @@
-package SimpleSemantics.Ops;
+package simplesemantics.ops;
 
-import SimpleSemantics.Environment;
-import SimpleSemantics.Types.DoNothing;
-import SimpleSemantics.Types.Expression;
-import SimpleSemantics.Types.Value;
-import SimpleSemantics.Types.Variable;
+import simplesemantics.Environment;
+import simplesemantics.types.DoNothing;
+import simplesemantics.types.Expression;
+import simplesemantics.types.Value;
+import simplesemantics.types.Variable;
 
 public class Assignment implements Expression{
 

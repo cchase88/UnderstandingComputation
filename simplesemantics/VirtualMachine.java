@@ -1,8 +1,9 @@
-package SimpleSemantics;
+package simplesemantics;
 
 import java.util.Map;
+import simplesemantics.types.Expression;
 
-import SimpleSemantics.Types.Expression;
+
 
 public class VirtualMachine {
 

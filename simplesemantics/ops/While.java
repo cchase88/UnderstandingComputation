@@ -1,10 +1,11 @@
-package SimpleSemantics.Ops;
+package simplesemantics.ops;
 
-import SimpleSemantics.Environment;
-import SimpleSemantics.Types.Bool;
-import SimpleSemantics.Types.DoNothing;
-import SimpleSemantics.Types.Expression;
-import SimpleSemantics.Types.Sequence;
+import simplesemantics.Environment;
+import simplesemantics.types.Bool;
+import simplesemantics.types.DoNothing;
+import simplesemantics.types.Expression;
+import simplesemantics.types.Sequence;
+import simplesemantics.ops.If;
 
 public class While implements Expression {
 
@@ -41,5 +42,6 @@ public class While implements Expression {
 			return new DoNothing();
 		}
 	}
+
 
 }

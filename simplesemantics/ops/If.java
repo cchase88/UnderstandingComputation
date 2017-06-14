@@ -1,9 +1,9 @@
-package SimpleSemantics.Ops;
+package simplesemantics.ops;
 
-import SimpleSemantics.Environment;
-import SimpleSemantics.Types.Bool;
-import SimpleSemantics.Types.DoNothing;
-import SimpleSemantics.Types.Expression;
+import simplesemantics.Environment;
+import simplesemantics.types.Bool;
+import simplesemantics.types.DoNothing;
+import simplesemantics.types.Expression;
 
 public class If implements Expression{
 

@@ -1,9 +1,9 @@
-package SimpleSemantics.Ops;
+package simplesemantics.ops;
 
-import SimpleSemantics.Environment;
-import SimpleSemantics.Types.Expression;
-import SimpleSemantics.Types.Number;
-import SimpleSemantics.Types.Value;
+import simplesemantics.Environment;
+import simplesemantics.types.Expression;
+import simplesemantics.types.Number;
+import simplesemantics.types.Value;
 
 public class Add implements Expression{
 

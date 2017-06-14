@@ -1,9 +1,9 @@
-package SimpleSemantics.Ops;
+package simplesemantics.ops;
 
-import SimpleSemantics.Environment;
-import SimpleSemantics.Types.Bool;
-import SimpleSemantics.Types.Expression;
-import SimpleSemantics.Types.Number;
+import simplesemantics.Environment;
+import simplesemantics.types.Bool;
+import simplesemantics.types.Expression;
+import simplesemantics.types.Number;
 
 public class GreaterThan implements Expression{
 
