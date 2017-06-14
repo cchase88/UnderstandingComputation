@@ -1,0 +1,50 @@
+package SimpleSemantics.Ops;
+
+import SimpleSemantics.Environment;
+import SimpleSemantics.Types.Bool;
+import SimpleSemantics.Types.Expression;
+import SimpleSemantics.Types.Number;
+
+public class GreaterThan implements Expression{
+
+	
+	private Expression left, right;
+	
+	public GreaterThan(Expression left, Expression right){
+		this.left = left;
+		this.right = right;
+	}
+	
+	@Override
+	public boolean isReducible() {
+		return true;
+	}
+
+	@Override
+	public Expression reduce(Environment env) {
+		if(left.isReducible()){
+			return new GreaterThan(left.reduce(env),right);
+		}
+		else if(right.isReducible()){
+			return new GreaterThan(left, right.reduce(env));
+		}
+		else {
+			Number l = (Number)left;
+			Number r = (Number)right;
+			
+			return new Bool(l.value() > r.value());
+		}
+	}
+	
+	public String toString(){
+		return String.format("%s > %s", left, right);
+	}
+
+	@Override
+	public Expression evaluate(Environment env) {
+		Number l = (Number)left.evaluate(env);
+		Number r = (Number) right.evaluate(env);
+		return new Bool(l.value() > r.value());
+	}
+
+}
